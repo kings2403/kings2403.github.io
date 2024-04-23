@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AltSchool Registration</title>
+  <link rel="shortcut icon" href="./crown.png" type="image/x-icon" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a></li>
+      <li><a href="index2.html">Sign Up</a></li>
+    </ul>
+</nav>
+ <h2>APPLICATION FORM</h2>
+ <p>Fill in your details</p>
+  <form action="/signup" method="post">
+    <div class="Block">
+      <p>
+        <label>First name</label><br>
+        <input type="text" name="first_name" placeholder="First name">
+      </p>
+      <p>
+        <label>Last name</label><br>
+        <input type="text" name="last_name" placeholder="Last name">
+      </p>
+    </div>
+    <div class="Block">
+    <p>
+      <label>Gender</label><br>
+      <select name="gender">
+      <option value="" disabled selected>Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      </select>
+    </p>
+    <p>
+      <label>Date of Birth</label><br>
+      <input type="date" name="date" required>
+    </p>
+    </div>
+    <div class="Block">
+      <p>
+        <label>Email</label><br>
+        <input type="email" name="email" required placeholder="JonDoe@yahoo.com">
+      </p>
+      <p>
+        <label>Educational Level</label><br>
+        <select name="Educational Level">
+          <option value=""disabled selected>Education Level</option>
+          <option value="Bsc">Bsc</option>
+          <option value="Msc">Msc</option>
+          <option value="Diploma">Diploma</option>
+          <option value="Doctorate (Phd)">Doctorate (Phd)</option>
+          <option value="High School / Secondary School">High School/Secondary School</option>
+          <option value="Undergraduate">Undergraduate</option>
+          <option value="Junior/Middle School">Junior/Middle School</option>
+          <option value="Post Graduate">Post Graduate</option>
+          </select>
+      </p>
+    </div>
+    <div class="Block">
+      <p>
+        <label>Country</label><br>
+        <select>
+          <option value=""disabled selected>Country</option>
+          <option>Brazil</option>
+          <option>China</option>
+          <option>India</option>
+          <option>Indonesia</option>
+          <option>Kenya</option>
+          <option>Nigeria</option>
+          <option>United Kingdom</option>
+          <option>United States</option>
+          <option>Rewanda</option>
+        </select>
+      </p>
+      <p>
+        <label>State/City of residence</label><br>
+      <select>
+        <option value=""disabled selected>State/City of residence</option>
+      </select>
+      </p>
+    </div>
+  <div class="Block">
+    <p>
+      <label>Employment Status</label><br>
+      <select name="Employment Status">
+        <option value=""disabled selected>Employment Status</option>
+        <option value="Employed">Employed</option>
+        <option value="Unemployed">Unemployed</option>
+        <option value="Self employed">Self employed</option>
+        </select>
+    </p>
+      <p>
+        <label>Phone number</label><br>
+        <input type="tel" name="phone" placeholder="08154387000">
+      </p>
+  </div>
+    <div class="Block">
+      <p>
+        <label>Choose School</label><br>
+        <select>
+          <option value=""disabled selected>Choose School</option>
+          <option>School of Creative Economy</option>
+          <option>School of Business</option>
+        </select>
+      </p>
+     <p>
+      <label>Choose Course of study</label><br>
+      <select>
+        <option value=""disabled selected>choose course</option>
+      </select>
+     </p>
+    </div>
+   <div class="Block">
+    <p>
+      <label>How did you hear about us?</label><br>
+      <select>
+        <option value=""disabled selected>select channel</option>
+        <option>Twitter</option>
+        <option>Facebook</option>
+        <option>LinkedIn</option>
+        <option>YouTube</option>
+        <option>Friend</option>
+        <option>WhatsApp</option>
+        <option>Instagram</option>
+        <option>Bill Board</option>
+      </select>
+    </p>
+    <p>
+      <label>Scholarship/Discount Code (optional)</label><br>
+      <input type="text" name="Scholarship/Discount Code (optional)" placeholder="Scholarship or Student ID">
+    </p>
+   </div>
+    <p>
+      <label>
+        By clicking continue, I agree to <a href="/terms">Terms of Use</a> and acknowledge that I have read the <a href="/privacy">Privacy Policy</a>
+      </label>
+    </p>
+    <p>
+      <button>Proceed</button>
+    </p>
+    <p>
+      Already have an account? <a href="https://portal.altschoolafrica.com/auth/login" target="_blank">Sign In</a>
+    </p>
+  </form>
+</body>
+</html>
