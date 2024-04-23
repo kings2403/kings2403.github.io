@@ -1,0 +1,39 @@
+---
+
+- name: Execute bash script and set up cron job
+  hosts: slave
+  become: yes
+  tasks:
+
+  - name: update & upgrade server
+    apt: 
+      update_cache: yes
+      upgrade: yes
+
+  - name: create cron job to check servers uptime every 12 am
+    cron:
+      name: check servers uptime every 12 am
+      minute: "0"
+      hour: "0"
+      day: "*"
+      month: "*"
+      weekday: "*"
+      job: "/usr/bin/uptime > /var/log/uptime_check.log 2>&1"
+      state: present
+
+  - name: copy the bash script to slave machine
+    copy:
+      src: lamp.sh
+      dest: ~/vagrant
+      owner: root
+      group: root
+      mode: 0744
+
+  - name: Execute bash script on Slave node
+    command: /lamp.sh
+
+  - name: Set Execute Permissions on the Script
+    command: chmod +x ~/lamp.sh
+
+  - name: Run Bash Script
+    command: bash lamp.sh emehinolakings kings420@ 
